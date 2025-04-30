@@ -6,7 +6,8 @@ const Hero = () => {
   const frequentlyAskedQuestionsData = [
     {
       question: "Is Documenting Everything Tedious?",
-      text: "Documenting everything can be tedious, but it is crucial for clarity, consistency and accountability. It helps track progress, ensures effective communication, aids in problem-solving and meets compliance and industry standards. Despite being time-consuming, good communication, aids in problem-solving and meets compliance and industry standards. Despite being time-consuming, good documentation can prevent misunderstandings and mistakes, saving time and effort in the long run.",
+      text: "",
+      // text: "Documenting everything can be tedious, but it is crucial for clarity, consistency and accountability. It helps track progress, ensures effective communication, aids in problem-solving and meets compliance and industry standards. Despite being time-consuming, good communication, aids in problem-solving and meets compliance and industry standards. Despite being time-consuming, good documentation can prevent misunderstandings and mistakes, saving time and effort in the long run.",
     },
     {
       question: "What are the Costs?",
@@ -41,20 +42,20 @@ const Hero = () => {
   return (
     <>
       <main>
-        <div className="ml-35 mb-40">
-          <h2 className="text-lg mb-5">5 Levels of Action Awareness</h2>
+        <div className="ml-35 mb-40 mt-20">
+          <h2 className="text-[30px] mb-10">5 Levels of Action Awareness</h2>
           <div className="flex">
-            <ul className="flex flex-col gap-3 w-[492px]  text-primary-text ">
+            <ul className="flex flex-col gap-3 w-[492px]  text-primary-text ml-5 ">
               <li
                 id="paragraph-item"
-                className= "mb-10 hover:text-primary cursor-pointer group:"
+                className="mb-5 hover:text-primary cursor-pointer"
                 onMouseEnter={() => setisHovered(true)}
                 onMouseLeave={() => setisHovered(false)}
               >
                 IDENTIFICATION AND DOCUMENTATION
               </li>
               {isHovered == true ? (
-                <p className="text-sm  group-hover:transition duration-300 ease-in-out translate-x-[-60px]">
+                <p className="text-sm">
                   Make a list of the key processes in your business and the
                   actions that make them up
                 </p>
@@ -88,19 +89,31 @@ const Hero = () => {
           </button>
         </div>
         <section id="how-it-works">
-          <h1 className="text-hero text-center pt-25 text-2xl">How it works</h1>
-          <div className="flex flex-row justify-between">
-            <div className="flex gap-9 relative">
-              <img className="absolute" src="public/images/blankImage.png" alt="" />
-              <img className="relative" src="public/images/blankImage.png" alt="" />
+          <div className="mb-28">
+          <h1 className="text-hero text-center pt-25 text-3xl mb-10">
+            How it works
+          </h1>
+          <div className="flex flex-row justify-center items-center gap-65">
+            <div className="flex gap-9 ml-30 relative">
+              <img
+                className="absolute"
+                src="public/images/blankImage.png"
+                alt=""
+              />
+              <img
+                className="relative left-30 top-10"
+                src="public/images/blankImage.png"
+                alt=""
+              />
             </div>
-            <ul className="flex flex-col gap-3 w-[492px] ">
-              <li>DOCUMENTATION</li>
-              <li>CENTRALIZE</li>
+            <ul className="flex flex-col gap-3 w-[492px] text-secondary-text text-xl">
+              <li className="mb-5">DOCUMENTATION</li>
+              <li className="mb-5">CENTRALIZE</li>
               <li>OPTIMIZE</li>
             </ul>
           </div>
-          <div className="text-center m-20">
+          </div>
+          <div className="text-center mb-60">
             <h3 className="text-hero pb-5">
               White-glove Onboarding and Consulting Services avaialble.
             </h3>
@@ -108,12 +121,14 @@ const Hero = () => {
               Learn More
             </a>
           </div>
-          <div className="text-center">
-            <h1 className="text-hero text-2xl font-bold">
+        </section>
+        <section>
+          <div>
+            <h1 className="text-hero text-2xl font-bold mb-20 text-center">
               FREQUENTLY ASKED QUESTIONS
             </h1>
             <FrequentlyAskedQuestion
-
+              questionData={frequentlyAskedQuestionsData}
             />
           </div>
         </section>
