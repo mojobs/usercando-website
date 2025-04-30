@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background : #17161A;
+  --color-primary : #45DCBF;
+  --color-hero : #03302CF2;
+  --color-primary-text : #03302C;
+}
+@base{
+* {
+
+  box-sizing: border-box;
+}
+body{
+  padding : 10px;
+}
+}
+
+@layer components{
+  .hero-background{
+
+    background-image: linear-gradient(rgba(3, 48, 44, 0.95), rgba(3, 48, 44, 0.95)), url('public/images/heroImage.png');
+    background-size: cover;
+    background-position: center;
+  }
+}
