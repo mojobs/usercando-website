@@ -369,7 +369,7 @@ const Hero = () => {
             </div>
           </div>
         </section>
-        <section id="updates-section">
+        <section id="updates-section" className="mb-15">
           <div className="text-center">
             <h1 className="text-[30px] mb-20">
               Stay updated with the latest trends, tips and success stories
@@ -471,8 +471,20 @@ const Hero = () => {
             <button className="mb-10 text-primary text-[18px] bg-white rounded-[24px] py-[10px] px-[30px] border-[0.5px] border-black :hover cursor-pointer">See all resources</button>
           </div>
         </section>
-    
-        </section>
+              <section id="next-step-sction" className="mb-50">
+                <div className="text-center">
+                  <h1 className="text-[30px] mb-10">Ready To Take The Next Step?</h1>
+                  <div className="stay-updated-box w-[700px] m-auto text-left px-[75px] pb-[50px] rounded-[25px]">
+                    <h2 className="pt-[97px] text-[20px] mb-2 font-[400px]">Stay Up to date</h2>
+                    <p className="text-[16px] text-[#999999] mb-5" >Get the latest research, industry insights, and product news delivered straight to your inbox.</p>
+                    <div className= "rounded-[24px] w-[504px] border-[1px] border-[#C3C3C3] overflow-hidden">
+                      <input className="w-[302px] pl-[35px] text-[16px] text-[#999999]" type="email" placeholder="Enter Email Address" /> 
+                      <button className="text-center text-[#17161A] font-[500px] text-[18px] py-[10px] px-[30px] bg-[#45DCBF] w-[200.2px]" type="submit">Subscribe</button>
+                    </div>
+                  </div>
+                </div>
+              </section>
+  
       </main>
     </>
   );
