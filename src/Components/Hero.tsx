@@ -8,7 +8,7 @@ const Hero = () => {
     setIsOpen(isOpen === index ? null : index);
   };
 
-  const listItems = [
+  const firstListItems = [
     {
       title: "IDENTIFICATION AND DOCUMENTATION",
       description:
@@ -25,6 +25,23 @@ const Hero = () => {
     {
       title: "OPTIMIZATION",
       description: "Streamline your processes based on insights.",
+    },
+  ];
+  const secondListItems = [
+    {
+      title: "DOCUMENTATION",
+      description:
+        "Easy-to-use tool for bottom-up process and action documentation.",
+    },
+    {
+      title: "CENTRALIZE",
+      description:
+        "Easy-to-use tool for bottom-up process and action documentation.",
+    },
+    {
+      title: "OPTIMIZE",
+      description:
+        "Easy-to-use tool for bottom-up process and action documentation.",
     },
   ];
   const frequentlyAskedQuestionsData = [
@@ -67,56 +84,74 @@ const Hero = () => {
     <>
       <main>
         <div className="ml-35 mb-40 mt-20">
-          <h2 className="text-[30px] mb-10">5 Levels of Action Awareness</h2>
-          <div className="flex">
-            <ul className="flex flex-col gap-3 w-[492px] text-primary-text ml-5">
-              {listItems.map((item, index) => (
-                <li
-                  key={index}
-                  className="mb-5 cursor-pointer"
-                  onClick={() => toggleItem(index)}
-                >
-                  <div className="flex justify-between items-center hover:text-primary">
-                    <span>{item.title}</span>
-                  </div>
-                  {isOpen === index && (
-                    <p className="text-sm mt-2 text-gray-600">
-                      {item.description}
-                    </p>
-                  )}
-                </li>
+          <h2 className="text-[30px] mb-10 font-lato font-[500px] text-[#03302C]">
+            5 Levels of Action Awareness
+          </h2>
+          <div className="flex gap-5 ">
+            <div className="h-[306px] w-[6px] rounded-[10px] flex flex-col justify-between">
+              {[0, 1, 2, 3].map((i) => (
+                <span
+                  key={i}
+                  className={`h-[76.5px] w-full transition-all duration-300 ${
+                    i === isOpen ? "bg-[#45DCBF]" : "bg-[#ccc]"
+                  }`}
+                ></span>
               ))}
-            </ul>
-            <div className="flex relative">
-              <img
-                className="w-[292px] h-[234px] rounded-4xl absolute shadow-md shadow-black"
-                src="public/images/neuralImage.png"
-                alt=""
-              />
-              <img
-                className="w-[377px] h-[303px] relative left-50 top-20 rounded-4xl border-2 border-primary"
-                src="public/images/statiticsImage.png"
-                alt=""
-              />
+            </div>
+            <div className="flex">
+              <ul className="flex flex-col gap-3 w-[492px] text-primary-text ml-5">
+                {firstListItems.map((item, index) => (
+                  <li
+                    key={index}
+                    className="mb-7 cursor-pointer"
+                    onClick={() => toggleItem(index)}
+                  >
+                    <div
+                      className={` text-[20px] font-lato font-[500px] flex justify-between items-center hover:text-primary ${
+                        index === isOpen ? "text-[#45DCBF]" : "text-[#03302C]"
+                      }`}
+                    >
+                      <span>{item.title}</span>
+                    </div>
+                    {isOpen === index && (
+                      <p className="text-sm mt-2 text-[#333333]">
+                        {item.description}
+                      </p>
+                    )}
+                  </li>
+                ))}
+              </ul>
+              <div className="flex relative">
+                <img
+                  className="w-[292px] h-[234px] rounded-4xl absolute shadow-md shadow-black"
+                  src="public/images/neuralImage.png"
+                  alt=""
+                />
+                <img
+                  className="w-[377px] h-[303px] relative left-50 top-20 rounded-4xl border-2 border-primary"
+                  src="public/images/statiticsImage.png"
+                  alt=""
+                />
+              </div>
             </div>
           </div>
         </div>
         <div className="hero-background h-[214px] text-center">
-          <h2 className=" text-white p-10 pt-15 pb-5 text-xl">
+          <h2 className=" font-lato text-[25px] font-[500px] text-white p-10 pt-15 pb-5 text-xl">
             Don't Put the Cart before the Horse: Become Action Aware Before
             Diving into AI
           </h2>
-          <button className="bg-primary text-black rounded-[24px] py-[12px] px-[75px]">
+          <button className="bg-primary text-[#17161A] text-[20px] font-nunito font-[500px] rounded-[24px] py-[12px] px-[75px]">
             Let's Talk
           </button>
         </div>
         <section id="how-it-works">
           <div className="mb-28">
-            <h1 className="text-hero text-center pt-25 text-3xl mb-10">
+            <h1 className="text-primary-text text-center font-lato text-[30px] font-[500px] pt-25 text-3xl mb-10 mx-auto">
               How it works
             </h1>
             <div className="flex flex-row justify-center items-center gap-65">
-              <div className="flex gap-9 ml-30 relative">
+              <div className="flex gap-9 relative">
                 <img
                   className="absolute"
                   src="public/images/blankImage.png"
@@ -128,11 +163,27 @@ const Hero = () => {
                   alt=""
                 />
               </div>
-              <ul className="flex flex-col gap-3 w-[492px] text-secondary-text text-xl">
-                <li className="mb-5">DOCUMENTATION</li>
-                <li className="mb-5">CENTRALIZE</li>
-                <li>OPTIMIZE</li>
-              </ul>
+              <div className="flex gap-5">
+                <div className="h-[213px] w-[6px] rounded-[10px] flex flex-col justify-between">
+                  {[0, 1, 2].map((i) => (
+                    <span
+                      key={i}
+                      className={`h-[71px] w-full transition-all duration-300 ${
+                        i === isOpen ? "bg-[#45DCBF]" : "bg-[#ccc]"
+                      }`}
+                    ></span>
+                  ))}
+                </div>
+
+                <ul className="flex flex-col gap-3 w-[492px] text-secondary-text text-xl">
+                  {secondListItems.map((items, i) => (
+                    <li key={i} onClick={() => toggleItem(i)} className={`mb-5 font-lato font-[500px] text-[20px] hover: cursor-pointer text-[#105F55]`}>
+                      {items.title}
+                      {isOpen == i && <p className="text-[#333333] font-nunito font-[400px] text-[18px]">{items.description}</p>}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
           <div className="text-center mb-60">
@@ -390,7 +441,6 @@ const Hero = () => {
                     Businesses
                   </p>
                   <div className="flex gap-1.5">
-                    
                     <a className="text-primary text-[16px]" href="">
                       Read more
                     </a>
@@ -413,7 +463,6 @@ const Hero = () => {
                     Avoid Them
                   </p>
                   <div className="flex gap-1.5">
-                    
                     <a className="text-primary text-[16px]" href="">
                       Read more
                     </a>
@@ -433,10 +482,9 @@ const Hero = () => {
                     <br />
                     Digital Transformation Tools for
                     <br />
-                     Your Businesses
+                    Your Businesses
                   </p>
                   <div className="flex gap-1.5">
-                    
                     <a className="text-primary text-[16px]" href="">
                       Read more
                     </a>
@@ -454,12 +502,11 @@ const Hero = () => {
                   <p className="text-[16px] mb-6 ">
                     The Importance Of Stakeholder
                     <br />
-                    Engagement in Digital 
+                    Engagement in Digital
                     <br />
-                   Transformation
+                    Transformation
                   </p>
                   <div className="flex gap-1.5">
-                    
                     <a className="text-primary text-[16px]" href="">
                       Read more
                     </a>
@@ -468,23 +515,38 @@ const Hero = () => {
                 </div>
               </div>
             </div>
-            <button className="mb-10 text-primary text-[18px] bg-white rounded-[24px] py-[10px] px-[30px] border-[0.5px] border-black :hover cursor-pointer">See all resources</button>
+            <button className="mb-10 text-primary text-[18px] bg-white rounded-[24px] py-[10px] px-[30px] border-[0.5px] border-black :hover cursor-pointer">
+              See all resources
+            </button>
           </div>
         </section>
-              <section id="next-step-sction" className="mb-50">
-                <div className="text-center">
-                  <h1 className="text-[30px] mb-10">Ready To Take The Next Step?</h1>
-                  <div className="stay-updated-box w-[700px] m-auto text-left px-[75px] pb-[50px] rounded-[25px]">
-                    <h2 className="pt-[97px] text-[20px] mb-2 font-[400px]">Stay Up to date</h2>
-                    <p className="text-[16px] text-[#999999] mb-5" >Get the latest research, industry insights, and product news delivered straight to your inbox.</p>
-                    <div className= "rounded-[24px] w-[504px] border-[1px] border-[#C3C3C3] overflow-hidden">
-                      <input className="w-[302px] pl-[35px] text-[16px] text-[#999999]" type="email" placeholder="Enter Email Address" /> 
-                      <button className="text-center text-[#17161A] font-[500px] text-[18px] py-[10px] px-[30px] bg-[#45DCBF] w-[200.2px]" type="submit">Subscribe</button>
-                    </div>
-                  </div>
-                </div>
-              </section>
-  
+        <section id="next-step-sction" className="mb-50">
+          <div className="text-center">
+            <h1 className="text-[30px] mb-10">Ready To Take The Next Step?</h1>
+            <div className="stay-updated-box w-[700px] m-auto text-left px-[75px] pb-[50px] rounded-[25px]">
+              <h2 className="pt-[97px] text-[20px] mb-2 font-[400px]">
+                Stay Up to date
+              </h2>
+              <p className="text-[16px] text-[#999999] mb-5">
+                Get the latest research, industry insights, and product news
+                delivered straight to your inbox.
+              </p>
+              <div className="rounded-[24px] w-[504px] border-[1px] border-[#C3C3C3] overflow-hidden">
+                <input
+                  className="w-[302px] pl-[35px] text-[16px] text-[#999999]"
+                  type="email"
+                  placeholder="Enter Email Address"
+                />
+                <button
+                  className="text-center text-[#17161A] font-[500px] text-[18px] py-[10px] px-[30px] bg-[#45DCBF] w-[200.2px]"
+                  type="submit"
+                >
+                  Subscribe
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </>
   );

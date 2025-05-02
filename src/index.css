@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import "tailwindcss";
 
 
@@ -11,6 +11,7 @@
   --color-secondary-text : #105F55;
   --font-nunito : "Nunito", sans-serif;
   --font-lato : "Lato", sans-serif;
+
 }
 @base{
 * {
