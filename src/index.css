@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
 @import "tailwindcss";
 
 
@@ -6,7 +8,9 @@
   --color-primary : #45DCBF;
   --color-hero : #03302CF2;
   --color-primary-text : #03302C;
-  --color-secondary-text : #105F55
+  --color-secondary-text : #105F55;
+  --font-nunito : "Nunito", sans-serif;
+  --font-lato : "Lato", sans-serif;
 }
 @base{
 * {
@@ -36,6 +40,10 @@ body{
   .stay-updated-box {
     box-shadow: 0px 1px 10px 1px #03302C1A;
     
+  }
+  .btn-shadow {
+    box-shadow: 0px 4px 4px 0px #0000000D;
+
   }
     
 

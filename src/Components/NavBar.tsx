@@ -3,7 +3,7 @@ import React from "react";
 const NavBar = () => {
   return (
     <>
-      <nav className="flex justify-between pt-7 pl-15 mr-15 mb-10  items-center">
+      <nav className="flex justify-between pt-7 pl-15 mr-15 mb-10 items-center">
         <div className="flex gap-1.5">
           <img
             className="w-[49.5-px] h-[50.93-px]"
@@ -14,7 +14,7 @@ const NavBar = () => {
             UserCanDo
           </a>
         </div>
-        <div className=" text-white flex gap-5 items-center">
+        <div className="font-nunito font-[400px] text-[#F0FDF9] flex gap-5 items-center text-[20px] " >
           <a href="">Home</a>
           <a href="">How it Works</a>
           <a href="">Pricing</a>
