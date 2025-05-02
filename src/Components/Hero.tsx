@@ -154,7 +154,7 @@ const Hero = () => {
             />
           </div>
         </section>
-        <section id="card-section">
+        <section id="card-section" className="mb-30">
           <div className="text-center mb-7">
             <h1 className="text-3xl mb-7">Achieve your business objectives</h1>
             <p className="mb-7">
@@ -368,6 +368,110 @@ const Hero = () => {
               </button>
             </div>
           </div>
+        </section>
+        <section id="updates-section">
+          <div className="text-center">
+            <h1 className="text-[30px] mb-20">
+              Stay updated with the latest trends, tips and success stories
+            </h1>
+            <div className="flex justify-center align-center mx-auto gap-[24px] mb-15">
+              <div className="w-[286px] h-[366px] rounded-2xl overflow-hidden flex-box-shadow">
+                <img
+                  className="w-[295px] h-[206px] mb-3 object-cover"
+                  src="public/images/lightbulb-image.png"
+                  alt=""
+                />
+                <div className="pl-[30px] text-left">
+                  <p className="text-[16px] mb-6 ">
+                    The benefits of Digital
+                    <br />
+                    Transformation for Small
+                    <br />
+                    Businesses
+                  </p>
+                  <div className="flex gap-1.5">
+                    
+                    <a className="text-primary text-[16px]" href="">
+                      Read more
+                    </a>
+                    <img src="public/icons/link-square.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div className="w-[286px] h-[366px] rounded-2xl flex-box-shadow overflow-hidden">
+                <img
+                  className="w-[295px] h-[206px] mb-3 object-cover"
+                  src="public/images/clipboard-image.png"
+                  alt=""
+                />
+                <div className="pl-[30px] text-left">
+                  <p className="text-[16px] mb-6 ">
+                    5 Common Pitfalls in Digital
+                    <br />
+                    Transformation and How to
+                    <br />
+                    Avoid Them
+                  </p>
+                  <div className="flex gap-1.5">
+                    
+                    <a className="text-primary text-[16px]" href="">
+                      Read more
+                    </a>
+                    <img src="public/icons/link-square.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div className="w-[286px] h-[366px] rounded-2xl flex-box-shadow overflow-hidden">
+                <img
+                  className="w-[295px] h-[206px] mb-3 object-cover"
+                  src="public/images/blockchain-image.png"
+                  alt=""
+                />
+                <div className="pl-[30px] text-left">
+                  <p className="text-[16px] mb-6 ">
+                    How to Choose the Right
+                    <br />
+                    Digital Transformation Tools for
+                    <br />
+                     Your Businesses
+                  </p>
+                  <div className="flex gap-1.5">
+                    
+                    <a className="text-primary text-[16px]" href="">
+                      Read more
+                    </a>
+                    <img src="public/icons/link-square.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div className="w-[286px] h-[366px] rounded-2xl flex-box-shadow overflow-hidden">
+                <img
+                  className="w-[295px] h-[206px] mb-3 object-cover"
+                  src="public/images/brain-image.png"
+                  alt=""
+                />
+                <div className="pl-[30px] text-left">
+                  <p className="text-[16px] mb-6 ">
+                    The Importance Of Stakeholder
+                    <br />
+                    Engagement in Digital 
+                    <br />
+                   Transformation
+                  </p>
+                  <div className="flex gap-1.5">
+                    
+                    <a className="text-primary text-[16px]" href="">
+                      Read more
+                    </a>
+                    <img src="public/icons/link-square.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button className="mb-10 text-primary text-[18px] bg-white rounded-[24px] py-[10px] px-[30px] border-[0.5px] border-black :hover cursor-pointer">See all resources</button>
+          </div>
+        </section>
+    
         </section>
       </main>
     </>
