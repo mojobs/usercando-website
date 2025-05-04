@@ -1,26 +1,30 @@
-import React from 'react'
-interface Question{
-  question : string;
-  text : string;
+import React from "react";
+interface Question {
+  question: string;
+  text: string;
 }
 interface MyQuetionProps {
- questionData : Question[];
+  questionData: Question[];
+  toggle(index: number|null): void;
+  isToggled: number|null;
 }
 
-const FrequentlyAskedQuestion = ({questionData}: MyQuetionProps) => {
-
-
+const FrequentlyAskedQuestion = ({
+  questionData,
+  toggle,
+  isToggled,
+}: MyQuetionProps) => {
   return (
-    <div className='text-primary w-[1006px]'>
-      {questionData.map((data)=> (
-        <div className='mb-10 ml-65'>
-        <h2>{data.question}</h2>
-        <p className='none'>{data.text}</p>
+    <div className="max-w-5xl mx-auto">
+      {questionData.map((data, index) => (
+        <div className="mb-10 :hover cursor-pointer relative" key={index}>
+          <h2 className="text-primary " onClick={() => toggle(index)}>{data.question}</h2><span className="absolute -top-3 right-5"><img src={isToggled === index ? 'public/icons/remove-circle.png' : 'public/icons/add-circle.png'} alt="" /></span>
+          {isToggled === index && <p className="text-[18px] font-nunito font-[400px] mt-5">{data.text}</p>}
         </div>
       ))}
-    <p></p>
+      <p></p>
     </div>
-  )
-}
+  );
+};
 
-export default FrequentlyAskedQuestion
+export default FrequentlyAskedQuestion;
