@@ -7,7 +7,7 @@ const BlogHero = () => {
         <h1 className="font-nunito text-center mx-auto mb-7 text-[1.5rem] font-bold">
           Why Documenting Your Business Process is Crucial for Growth
         </h1>
-        <div className="flex justify-between text-sm font-nunito px-5 mb-5 max-[500px]:px-0 xl:text-[1rem] 2xl:text-[1.5rem]">
+        <div className="flex justify-between text-sm font-nunito px-5 mb-5 max-[500px]:px-0 xl:text-[1rem] 2xl:text-[1.5rem] xl:justify-evenly">
           <p className="font-bold ">Bayo Olayemi</p>
           <p className="text-[#787878] italic">Last updated: May 29, 2024</p>
         </div>
