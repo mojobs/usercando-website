@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
@@ -19,7 +20,7 @@ const NavBar = () => {
           <a href="">How it Works</a>
           <a href="">Pricing</a>
           <a href="">FAQ</a>
-          <a href="">Blog</a>
+          <Link to="/blog">Blog</Link>
           <button className="bg-primary text-black rounded-[24px] py-[12px] px-[60px] :hover cursor-pointer">
             Try for Free
           </button>
