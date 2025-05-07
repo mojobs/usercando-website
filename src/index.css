@@ -19,6 +19,7 @@
 @base {
   * {
     box-sizing: border-box;
+
   }
 
   body {
@@ -66,6 +67,10 @@
   }
   .landing-page-btn-header{
     border: 1px solid #C3C3C3;
+  }
+  .line-height-letter-spacing{
+    line-height: 100%;
+    letter-spacing: 0%;
   }
 
 }

@@ -4,7 +4,7 @@ import NavBar from "./NavBar";
 const Header = () => {
   return (
     <>
-      <header className="bg-background h-[531px] w-screen">
+      <header className="bg-background min-[1400px]:h-[531px] min-[1400px]:w-screen">
         <div className="ml-10">
         <NavBar/>
         <div className="pl-15 pt-7">

@@ -18,7 +18,7 @@ const NavBar = () => {
         <div className="font-nunito font-[400px] text-[#F0FDF9] flex gap-5 items-center text-[20px] " >
           <a href="">Home</a>
           <Link to="/landing">How it Works</Link>
-          <a href="">Pricing</a>
+          <Link to="/pricing">Pricing</Link>
           <a href="">FAQ</a>
           <Link to="/blog">Blog</Link>
           <button className="bg-primary text-black rounded-[24px] py-[12px] px-[60px] :hover cursor-pointer">
