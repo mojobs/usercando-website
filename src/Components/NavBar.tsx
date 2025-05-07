@@ -17,7 +17,7 @@ const NavBar = () => {
         </div>
         <div className="font-nunito font-[400px] text-[#F0FDF9] flex gap-5 items-center text-[20px] " >
           <a href="">Home</a>
-          <a href="">How it Works</a>
+          <Link to="/landing">How it Works</Link>
           <a href="">Pricing</a>
           <a href="">FAQ</a>
           <Link to="/blog">Blog</Link>

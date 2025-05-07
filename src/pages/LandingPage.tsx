@@ -1,8 +1,14 @@
 import React from 'react'
 
+import LandingPageHeader from '../Components/LandingPageHeader'
+
+
 const LandingPage = () => {
   return (
-    <div>LandingPage</div>
+    <>
+   
+    <LandingPageHeader/>
+    </>
   )
 }
 
