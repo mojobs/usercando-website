@@ -4,7 +4,7 @@ import LandingNavBar from "../Components/LandingNavBar";
 const LandingPageHeader = () => {
   return (
     <>
-      <header className="bg-[#17161A] w-[100%] h-[100%] pt-5 min-[1400px]:mb-10">
+      <header className="bg-[#17161A] w-[100%] h-[100%] pt-5 max-[1000px]:pb-10 min-[1000px]:pb-20 mb-10">
         <LandingNavBar />
         <div className="min-[1000px]:flex min-[1000px]:gap-5 min-[1000px]:items-start min-[1000px]:justify-between">
           <div className=" ml-5 mb-5 min-[1000px]:mx-auto min-[1000px]:mr-0 min-[1000px]:pl-15 min-[1400px]:pl-15 min-[1400px]:ml-13 ">
