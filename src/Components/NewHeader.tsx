@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const NewHeader = () => {
   return (
     <>
-      <header className="bg-background">
+      <header className="bg-background min-[600px]:px-5">
         <div className="">
           <nav className="flex items-center gap-20 p-2.5 mx-auto mb-2.5 min-[350px]:gap-30 justify-between min-[1000px]:p-5 min-[1000px]:pl-10 min-[1400px]:px-20">
             <div className="flex gap-2 items-center justify-self-start">
@@ -30,25 +30,25 @@ const NewHeader = () => {
             </div>
           </nav>
           <div className="px-5 line-height-letter-spacing mb-2.5 min-[1000px]:pl-10 min-[1000px]:mb-5 min-[1400px]:px-20">
-            <h4 className="text-[#45DCBF] font-nunito text-[0.5rem] mb-1 leading-normal pr-5 min-[1000px]:text-[0.8rem] min-[1000px]:font-[400px] min-[1000px]:mb-2.5 min-[1400px]:text-[1.125rem] min-[1400px]:mb-[0.75rem]">
+            <h4 className="text-[#45DCBF] font-nunito font-[400]  text-[0.5rem] mb-1 leading-normal pr-5 min-[1000px]:text-[0.8rem] min-[1000px]:mb-2.5 min-[1400px]:text-[1.125rem] min-[1400px]:mb-[0.75rem]">
               Action Intelligence Understand key business actions before
               implementing AI and Automation.
             </h4>
-            <h1 className="text-white font-lato text-[0.9rem] mb-1  pr-5 min-[1000px]:text-[2.25rem] min-[1000px]:font-[700px] min-[1000px]:leading-[100%] min-[1000px]:tracking-[0%] min-[1000px]:mb-4 min-[1400px]:text-[2.813rem] min-[1400px]:mb-[1.125rem]">
+            <h1 className="text-white font-lato font-[700] text-[0.9rem] mb-1  pr-5 min-[1000px]:text-[2.25rem] min-[1000px]:font-[700] min-[1000px]:leading-[100%] min-[1000px]:tracking-[0%] min-[1000px]:mb-4 min-[1400px]:text-[2.813rem] min-[1400px]:mb-[1.125rem] min-[640px]:text-[1.2rem] min-[600px]:leading-none">
               Achieve Action Intelligence: The Essential <br /> Precursor to AI
               Transformation
             </h1>
-            <h2 className="font-nunito text-[#45DCBF] text-[0.65rem] pr-5 min-[1000px]:text-[1rem] min-[1400px]:text-[1.563rem] min-[1400px]:mb-[1.563rem]">
+            <h2 className="font-nunito font-[400] text-[#45DCBF] text-[0.65rem] pr-5 min-[1000px]:text-[1rem] min-[1400px]:text-[1.563rem] min-[1400px]:mb-[1.563rem]">
               From Operating in the Dark to Full visibility of your Daily
               Business Actions
             </h2>
           </div>
-          <div className="font-nunito text-[0.5rem] px-5 pb-5 relative min-[1000px]:text-[1rem] min-[1000px]:pl-10 min-[1000px]:pb-12 min-[1400px]:px-20">
-            <button className="bg-[#45DCBF] px-2 py-1 rounded-2xl min-[1000px]:px-10 min-[1000px]:py-2 hover:cursor-pointer hover:brightness-90 min-[1400px]:text-[1.25rem] min-[1400px]:py-[0.75rem] min-[1400px]:px-[3.75rem] min-[1400px]:rounded-[1.5rem]" >
-              Let's Talk
+          <div className="font-nunito font-[500] text-[0.5rem] px-5 pb-5 relative min-[1000px]:text-[1rem] min-[1000px]:pl-10 min-[1000px]:pb-12 min-[1400px]:px-20">
+            <button className="bg-[#45DCBF] font-[500] px-2 py-1 rounded-2xl min-[1000px]:px-10 min-[1000px]:py-2 hover:cursor-pointer hover:brightness-90 min-[1400px]:text-[1.25rem] min-[1400px]:py-[0.75rem] min-[1400px]:px-[3.75rem] min-[1400px]:rounded-[1.5rem]" >
+              Lets talk
             </button>
             <button className="ml-2.5 px-2 py-1 inline-block">
-              <Link className="text-white min-[1400px]:text-[1.25rem]" to="/howitworks">
+              <Link className="text-white min-[1400px]:text-[1.25rem] font-[500]" to="/howitworks">
                 How It Works
               </Link>
             </button>
