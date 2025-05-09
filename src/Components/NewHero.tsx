@@ -122,7 +122,7 @@ const NewHero = () => {
         </div>
       </section>
       <section className="px-5">
-        <div>
+        <div className="mb-5">
           <h2 className="font-lato font-[500] text-[#03302C] mb-2 min-[400px]:mb-4 text-center text-[0.75rem] min-[400px]:text-[1rem] lg:text-[1.25rem] xl:text-[1.875rem] xl:mb-12 2xl:text-[3.5rem]">
             How it Works
           </h2>
@@ -179,9 +179,9 @@ const NewHero = () => {
             </div>
           </div>
         </div>
-        <div>
-          <h4></h4>
-          <p></p>
+        <div className="text-center text-[0.6rem]">
+          <h4 className="text-[#03302C] mb-1.5 font-lato font-[500] sm:text-[0.9rem] md:text-[1rem] lg:text-[1.25rem] 2xl:text-[2.5rem]"> White Glove on Boarding and consulting services available</h4>
+          <p className="text-primary font-nunito font-[500] sm:text-[0.8rem] lg:text-[1rem] xl:text-[1.25rem] 2xl:text-[2.5rem]">Learn more</p>
         </div>
       </section>
     </>
