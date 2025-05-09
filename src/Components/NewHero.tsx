@@ -1,8 +1,11 @@
 import React, { useState } from "react";
+import FrequentlyAskedQuestion from "./FrequentlyAskedQuestion";
 
 const NewHero = () => {
   const [firstToggled, setFirstToggled] = useState<number | null>(null);
   const [secondToggled, setSecondToggled] = useState<number | null>(null);
+  const[frequentlyAskedQuestionIndex, setFrequentlyAskedQuestionIndex] = useState<number|null>(null);
+
 
   const toggleFirstList = (index: number) => {
     setFirstToggled(firstToggled === index ? null : index);
@@ -10,6 +13,9 @@ const NewHero = () => {
 
   const toggleSecondList = (index: number) => {
     setSecondToggled(secondToggled === index ? null : index);
+  };
+  const toggleFrequentlyAskedQuestions = (index: number) => {
+    setFrequentlyAskedQuestionIndex(frequentlyAskedQuestionIndex === index ? null : index);
   };
 
   const firstListItems = [
@@ -49,6 +55,40 @@ const NewHero = () => {
       title: "OPTIMIZE",
       description:
         "Easy-to-use tool for bottom-up process and action documentation.",
+    },
+  ];
+  const frequentlyAskedQuestionsData = [
+    {
+      question: "Is Documenting Everything Tedious?",
+      text: "Documenting everything can be tedious, but it is crucial for clarity, consistency and accountability. It helps track progress, ensures effective communication, aids in problem-solving and meets compliance and industry standards. Despite being time-consuming, good communication, aids in problem-solving and meets compliance and industry standards. Despite being time-consuming, good documentation can prevent misunderstandings and mistakes, saving time and effort in the long run.",
+    },
+    {
+      question: "What are the Costs?",
+      text: "",
+    },
+    {
+      question: "What Defines An Action?",
+      text: "",
+    },
+    {
+      question: "What Constitutes An Event?",
+      text: "",
+    },
+    {
+      question: "How Do You Collect Events And Data Attributes?",
+      text: "",
+    },
+    {
+      question: "How Does This Integrate With Project Management Tools?",
+      text: "",
+    },
+    {
+      question: "Can I Integrate With Project Management Tools?",
+      text: "",
+    },
+    {
+      question: "What Does Your Consultinf Involve?",
+      text: "",
     },
   ];
   return (
@@ -121,7 +161,7 @@ const NewHero = () => {
           </button>
         </div>
       </section>
-      <section className="px-5">
+      <section className="px-5 mb-10">
         <div className="mb-5">
           <h2 className="font-lato font-[500] text-[#03302C] mb-2 min-[400px]:mb-4 text-center text-[0.75rem] min-[400px]:text-[1rem] lg:text-[1.25rem] xl:text-[1.875rem] xl:mb-12 2xl:text-[3.5rem]">
             How it Works
@@ -180,8 +220,25 @@ const NewHero = () => {
           </div>
         </div>
         <div className="text-center text-[0.6rem]">
-          <h4 className="text-[#03302C] mb-1.5 font-lato font-[500] sm:text-[0.9rem] md:text-[1rem] lg:text-[1.25rem] 2xl:text-[2.5rem]"> White Glove on Boarding and consulting services available</h4>
-          <p className="text-primary font-nunito font-[500] sm:text-[0.8rem] lg:text-[1rem] xl:text-[1.25rem] 2xl:text-[2.5rem]">Learn more</p>
+          <h4 className="text-[#03302C] mb-1.5 font-lato font-[500] sm:text-[0.9rem] md:text-[1rem] lg:text-[1.25rem] 2xl:text-[2.5rem]">
+            {" "}
+            White Glove on Boarding and consulting services available
+          </h4>
+          <p className="text-primary font-nunito font-[500] sm:text-[0.8rem] lg:text-[1rem] xl:text-[1.25rem] 2xl:text-[2.5rem]">
+            Learn more
+          </p>
+        </div>
+      </section>
+      <section className="mb-32">
+        <div>
+          <h1 className="text-[#03302C] font-lato font-[500] text-[0.65rem] min-[400px]:text-[0.7rem] sm:text-[0.85rem] md:text-[1rem] lg:text-[1.2rem] xl:text-[1.5rem] 2xl:text-[2rem] mb-5 lg:mb-7 xl:text-2xl xl:font-bold xl:mb-20 text-center">
+            FREQUENTLY ASKED QUESTIONS
+          </h1>
+          <FrequentlyAskedQuestion
+            isToggled={frequentlyAskedQuestionIndex}
+            questionData={frequentlyAskedQuestionsData}
+            toggle={toggleFrequentlyAskedQuestions}
+          />
         </div>
       </section>
     </>
