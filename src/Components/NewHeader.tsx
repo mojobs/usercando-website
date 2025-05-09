@@ -9,7 +9,7 @@ const NewHeader = () => {
           <nav className="flex items-center gap-20 p-2.5 mx-auto mb-2.5 min-[350px]:gap-30 justify-between min-[1000px]:p-5 min-[1000px]:pl-10 min-[1400px]:px-20 min-[1400px]:mb-15">
             <div className="flex gap-2 items-center justify-self-start">
               <img className="" src="public/icons/logo.svg" alt="" />
-              <p className="text-white text-[1rem] min-[1400px]:text-[1.25rem] 2xl:text-[2rem]">UserCanDo</p>
+              <p className="text-white text-[1rem] min-[1400px]:text-[1.25rem] 2xl:text-[3rem]">UserCanDo</p>
             </div>
             <div className="justify-self-end min-[1000px]:hidden">
               <img
