@@ -94,13 +94,13 @@ const NewHero = () => {
   return (
     <>
       <section className="mb-5 lg:mb-15">
-        <div className="p-5 min-[600px]:flex min-[600px]:items-start min-[600px]:mx-auto min-[600px]:flex-row xl:mb-20">
-          <div className="mb-10 min-[600px]:w-[50%] sm:ml-7 lg:pl-10 2xl:ml-30">
-            <h1 className="font-lato font-[500] text-[0.75rem] text-[#03302C] mb-5 text-center min-[600px]:text-left min-[600px]:text-[1rem] sm:mt-5 lg:text-[1.25rem] xl:text-[1.875rem] xl:mb-12 2xl:text-[3.5rem]">
+        <div className="p-5 min-[600px]:flex min-[600px]:items-start min-[600px]:mx-auto min-[600px]:flex-row min-[1400px]:mb-20">
+          <div className="mb-10 min-[600px]:w-[50%] sm:ml-7 lg:pl-10 2min-[1400px]:ml-30">
+            <h1 className="font-lato font-[500] text-[0.75rem] text-[#03302C] mb-5 text-center min-[600px]:text-left min-[600px]:text-[1rem] sm:mt-5 lg:text-[1.25rem] min-[1400px]:mb-12 xl:text-[1.875rem]">
               5 Levels of Action Awareness
             </h1>
-            <div className="min-[600px]:h-[30vh] 2xl:mb-10">
-              <div className="flex h-[100px] min-[600px]:h-[80%] lg:h-[85%] xl:h-[120%] 2xl:h-[130%]">
+            <div className="min-[600px]:h-[30vh] 2min-[1400px]:mb-10">
+              <div className="flex h-[100px] min-[600px]:h-[80%] lg:h-[85%] xl:h-[115%]">
                 <div className="h-[100%] w-[1%] rounded-[10px] flex flex-col justify-between">
                   {[0, 1, 2, 3].map((i) => (
                     <span
@@ -111,7 +111,7 @@ const NewHero = () => {
                     ></span>
                   ))}
                 </div>
-                <ul className="flex flex-col gap-4 w-[100vw] text-primary-text ml-5 min-[600px]:gap-6 lg:gap-5 xl:gap-[2.3rem] 2xl:gap-[4rem]">
+                <ul className="flex flex-col gap-4 w-[100vw] text-primary-text ml-5 min-[600px]:gap-6 lg:gap-5 xl:gap-[2.3rem]">
                   {firstListItems.map((item, index) => (
                     <li
                       key={index}
@@ -119,7 +119,7 @@ const NewHero = () => {
                       onClick={() => toggleFirstList(index)}
                     >
                       <div
-                        className={`text-[0.5rem] font-lato font-[500] flex justify-start items-center min-[600px]:text-[0.75rem] lg:text-[0.938rem] xl:text-[1.25rem] 2xl:text-[2.5rem] hover:text-primary ${
+                        className={`text-[0.5rem] font-lato font-[500] flex justify-start items-center min-[600px]:text-[0.75rem] lg:text-[0.938rem] xl:text-[1.25rem] hover:text-primary ${
                           index === firstToggled
                             ? "text-[#45DCBF]"
                             : "text-[#03302C]"
@@ -128,7 +128,7 @@ const NewHero = () => {
                         <span>{item.title}</span>
                       </div>
                       {firstToggled === index && (
-                        <p className="text-[0.4rem] text-[black] text-left min-[600px]:text-[0.65rem] lg:text-[0.75rem] lg:w-[80%] xl:text-[1.125rem] 2xl:text-[2rem]">
+                        <p className="text-[0.4rem] text-[black] text-left min-[600px]:text-[0.65rem] lg:text-[0.75rem] lg:w-[80%] xl:text-[1.125rem]">
                           {item.description}
                         </p>
                       )}
@@ -138,38 +138,38 @@ const NewHero = () => {
               </div>
             </div>
           </div>
-          <div className="size-30 min-[600px]:size-45 md:size-50 lg:size-70 xl:size-93 2xl:size-150 mx-auto sm:ml-7 text-center flex -translate-x-[25%] relative">
+          <div className="size-30 min-[600px]:size-45 md:size-50 lg:size-70 xl:size-93 2xl-[1400px]:size-150 mx-auto sm:ml-7 text-center flex -translate-x-[25%] relative">
             <img
               className="size-[80%] min-[600px]:w-[80%] min-[600px]:h-[60%] xl:h-[65%] rounded-lg min-[600px]:rounded-4xl xl:rounded-[2.813rem] absolute shadow-md shadow-black object-cover"
               src="public/images/neuralImage.png"
               alt=""
             />
             <img
-              className="size-[80%] min-[600px]:w-[90%] min-[600px]:h-[80%] xl:h-[82%] xl:w-[100%] rounded-lg min-[600px]:rounded-4xl xl:rounded-[2.813rem] relative top-[25%] left-[50%] min-[600px]:top-[30%] border-2 border-primary object-cover"
+              className="size-[80%] min-[600px]:w-[90%] min-[600px]:h-[80%] xl:h-[82%] xl:w-[100%] rounded-lg min-[600px]:rounded-4xl min-[1400px]:rounded-[2.813rem] relative top-[25%] left-[50%] min-[600px]:top-[30%] border-2 border-primary object-cover"
               src="public/images/statiticsImage.png"
               alt=""
             />
           </div>
         </div>
-        <div className="hero-background text-center p-2 pt-3 pb-4 md:p-6 2xl:p-10">
-          <h3 className="text-[#F0FDF9] font-lato font-[500] mb-1 text-[0.6rem] min-[400px]:text-[0.8rem] md:text-[0.9rem] lg:text-[1.25rem] min-[400px]:mb-2 xl:text-[1.563rem] xl:mb-5 2xl:text-[2.5rem] 2xl:mb-10">
+        <div className="hero-background text-center p-2 pt-3 pb-4 md:p-6 xl:pb-[3.375rem]">
+          <h3 className="text-[#F0FDF9] font-lato font-[500] mb-1 text-[0.6rem] min-[400px]:text-[0.8rem] md:text-[0.9rem] lg:text-[1.25rem] xl:text-[1.563rem] xl:pt-[3.375rem] xl:mb-[1.563rem]">
             Don't Put the Cart Before the Horse: Become Action Aware Before
             Diving into AI
           </h3>
-          <button className="bg-primary text-[0.6rem]  min-[400px]:text-[0.8rem] lg:text-[1rem] lg:px-12 min-[400px]:px-7 sm:px-10  sm:py-1.5 px-5 py-0.5 rounded-2xl xl:text-[1.25rem] xl:px-[3.75rem] xl:py-[0.75rem] xl:rounded-[1.5rem] xl:w-[13.75rem] 2xl:text-[2rem] 2xl:py-[1.25rem] 2xl:px-[5rem] 2xl:w-[25rem] 2xl:rounded-4xl">
+          <button className="bg-primary text-[0.6rem]  min-[400px]:text-[0.8rem] lg:text-[1rem] lg:px-12 min-[400px]:px-7 sm:px-10  sm:py-1.5 px-5 py-0.5 rounded-2xl xl:text-[1.25rem] xl:px-[3.75rem] xl:py-[0.75rem] xl:rounded-[1.5rem]">
             Lets tallk
           </button>
         </div>
       </section>
       <section className="px-5 mb-10">
         <div className="mb-5">
-          <h2 className="font-lato font-[500] text-[#03302C] mb-2 min-[400px]:mb-4 text-center text-[0.75rem] min-[400px]:text-[1rem] lg:text-[1.25rem] xl:text-[1.875rem] xl:mb-12 2xl:text-[3.5rem]">
+          <h2 className="font-lato font-[500] text-[#03302C] mb-2 min-[400px]:mb-4 text-center text-[0.75rem] min-[400px]:text-[1rem] lg:text-[1.25rem] xl:text-[1.875rem] xl:mb-12">
             How it Works
           </h2>
           <div className="p-5 sm:flex sm:items-start sm:mx-auto sm:flex-row">
-            <div className="size-30 relative mx-auto mb-7 -translate-x-[25%] sm:flex sm:size-45 lg:size-70 xl:size-93 2xl:size-150">
+            <div className="size-30 relative mx-auto mb-7 -translate-x-[25%] sm:flex sm:size-45 lg:size-70 xl:size-93">
               <img
-                className="size-[80%] absolute sm:w-[80%] sm:h-[60%] xl:h-[65%] xl:w-[100%]"
+                className="size-[80%] absolute sm:w-[80%] sm:h-[60%] min-[1400px]:h-[65%] xl:w-[100%]"
                 src="public/images/blankImage.png"
                 alt=""
               />
@@ -191,7 +191,7 @@ const NewHero = () => {
                     ></span>
                   ))}
                 </div>
-                <ul className="flex flex-col gap-7 w-[100vw] text-primary-text ml-5 sm:gap-7 lg:gap-10 xl:gap-17 2xl:gap-27">
+                <ul className="flex flex-col gap-7 w-[100vw] text-primary-text ml-5 sm:gap-7 lg:gap-10 xl:gap-20 ">
                   {secondListItems.map((item, index) => (
                     <li
                       key={index}
@@ -199,7 +199,7 @@ const NewHero = () => {
                       onClick={() => toggleSecondList(index)}
                     >
                       <div
-                        className={`text-[0.5rem] font-lato font-[500] flex justify-start items-center min-[600px]:text-[0.75rem] lg:text-[0.938rem] xl:text-[1.25rem] 2xl:text-[2.5rem] hover:text-primary ${
+                        className={`text-[0.5rem] font-lato font-[500] flex justify-start items-center min-[600px]:text-[0.75rem] lg:text-[0.938rem] xl:text-[1.25rem] :hover:text-primary ${
                           index === secondToggled
                             ? "text-[#45DCBF]"
                             : "text-[#03302C]"
@@ -208,7 +208,7 @@ const NewHero = () => {
                         <span>{item.title}</span>
                       </div>
                       {secondToggled === index && (
-                        <p className="text-[0.4rem] text-[black] text-left min-[600px]:text-[0.65rem] lg:text-[0.75rem] lg:w-[80%] xl:text-[1.125rem] 2xl:text-[1.5rem] 2xl:text-[2rem]">
+                        <p className="text-[0.4rem] text-[black] text-left min-[600px]:text-[0.65rem] lg:text-[0.75rem] lg:w-[80%] xl:text-[1.125rem]">
                           {item.description}
                         </p>
                       )}
@@ -220,18 +220,18 @@ const NewHero = () => {
           </div>
         </div>
         <div className="text-center text-[0.6rem]">
-          <h4 className="text-[#03302C] mb-1.5 font-lato font-[500] sm:text-[0.9rem] md:text-[1rem] lg:text-[1.25rem] 2xl:text-[2.5rem]">
+          <h4 className="text-[#03302C] mb-1.5 font-lato font-[500] sm:text-[0.9rem] md:text-[1rem] lg:text-[1.25rem]">
             {" "}
             White Glove on Boarding and consulting services available
           </h4>
-          <p className="text-primary font-nunito font-[500] sm:text-[0.8rem] lg:text-[1rem] xl:text-[1.25rem] 2xl:text-[2.5rem]">
+          <p className="text-primary font-nunito font-[500] sm:text-[0.8rem] lg:text-[1rem] xl:text-[1.25rem]">
             Learn more
           </p>
         </div>
       </section>
-      <section className="mb-32">
+      <section className="mb-20">
         <div>
-          <h1 className="text-[#03302C] font-lato font-[500] text-[0.65rem] min-[400px]:text-[0.7rem] sm:text-[0.85rem] md:text-[1rem] lg:text-[1.2rem] xl:text-[1.5rem] 2xl:text-[2rem] mb-5 lg:mb-7 xl:text-2xl xl:font-bold xl:mb-20 text-center">
+          <h1 className="text-[#03302C] font-lato font-[500] text-[0.65rem] min-[400px]:text-[0.7rem] sm:text-[0.85rem] md:text-[1rem] lg:text-[1.2rem] mb-5 lg:mb-7 xl:text-[1.5rem]  xl:mb-20 text-center">
             FREQUENTLY ASKED QUESTIONS
           </h1>
           <FrequentlyAskedQuestion
@@ -240,6 +240,16 @@ const NewHero = () => {
             toggle={toggleFrequentlyAskedQuestions}
           />
         </div>
+      </section>
+      <section className="mb-20">
+        <div className="text-center px-5 min-[400px]:px-10 sm:px-25 md:px-30 lg:px-50 xl:px-90]">
+        <h1 className="font-lato font-[500] text-[#03302C] text-[0.65rem] min-[400px]:text-[0.7rem] min-[400px]:mb-1 sm:text-[0.85rem] md:text-[1rem] lg:text-[1.5rem] xl:text-[2.188rem]">Achieve Your Business Objectives</h1>
+        <p className="text-[0.5rem] text-[#333333] min-[400px]:text-[0.6rem] min-[400px]:mb-1 sm:text-[0.8rem] sm:mb-2 md:text-[0.9rem] lg:text-[1.2rem] lg:mb-5 xl:text-[1.125rem]">Choose a plan that’s best for you and start your digital transformation <br className="max-[1400px]:hidden" /> journey today!</p>
+        <button className="text-[0.55rem] min-[400px]:text-[0.6rem] text-[#45DCBF] view-detailed-pricing-btn rounded-[10px] px-2 py-0.5 min-[400px]:px-3 min-[400px]:py-1 sm:text-[0.75rem] sm:py-2 sm:px-3 sm:rounded-2xl md:text-[0.85rem] md:px-4 lg:text-[1rem] lg:px-7 lg:py-2 lg:rounded-3xl xl:text-[1.125rem] xl:py-[0.625rem] xl:px-[1.875rem] hover:brightness-[75%] hover:cursor-pointer"> View Detailed Pricing</button>
+        </div>
+      </section>
+      <section>
+        <div></div>
       </section>
     </>
   );

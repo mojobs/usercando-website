@@ -84,5 +84,7 @@
     line-height: 100%;
     letter-spacing: 0%;
   }
-
+  .view-detailed-pricing-btn{
+    border: 0.5px solid #03302C;
+  }
 }
