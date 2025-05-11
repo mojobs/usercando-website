@@ -93,6 +93,28 @@ const NewHero = () => {
       text: "",
     },
   ];
+  const smallGridPostsData = [
+    {
+      index: 1,
+      image: "public/images/lightbulb-image.png",
+      text: "The Benefits of Digital Transformation for Small Businesses",
+    },
+    {
+      index: 2,
+      image: "public/images/clipboard-image.png",
+      text: "5 Common Pitfalls in Digital Transformation and How to Avoid Them",
+    },
+    {
+      index: 3,
+      image: "public/images/brain-image.png",
+      text: "How to Choose the Right Digital Transformation Tools for Your Business",
+    },
+    {
+      index: 4,
+      image: "public/images/blockchain-image.png",
+      text: "The Importance of Stakeholder Engagement in Digital Transformation",
+    },
+  ];
   return (
     <>
       <section className="mb-5 lg:mb-15">
@@ -261,7 +283,9 @@ const NewHero = () => {
       <section className="mb-10">
         <div className="flex flex-col gap-5 sm:grid sm:grid-cols-2 sm:grid-rows-2 sm:px-30 sm:gap-10 md:px-45 lg:px-65 lg:gap-x-3 xl:px-100 min-[1400px]:px-75">
           <div className=" bg-white grid-box-shadow text-center mx-auto rounded-2xl p-5 xl:p-10">
-            <h2 className="font-lato font-[500] text-[0.65rem] mb-5 sm:text-[1rem] md:text-[1.2rem] xl:text-[1.25rem]">Free</h2>
+            <h2 className="font-lato font-[500] text-[0.65rem] mb-5 sm:text-[1rem] md:text-[1.2rem] xl:text-[1.25rem]">
+              Free
+            </h2>
             <ul className="font-nunito font-[400] text-[0.45rem] text-left mb-5 flex flex-col gap-3 sm:text-[0.5rem] sm:mb-11 md:text-[0.6rem] xl:text-[0.875rem] xl:gap-[1.125rem] xl:mb-[115px]">
               <li className="flex gap-3">
                 <img
@@ -309,7 +333,12 @@ const NewHero = () => {
             </button>
           </div>
           <div className=" bg-white grid-box-shadow text-center mx-auto rounded-2xl p-5 xl:p-10">
-            <h2 className="font-lato font-[500] text-[0.65rem] mb-5 sm:text-[1rem] xl:text-[1.25rem]">Starter <h2 className="font-lato font-[700] sm:text-[1rem] md:text-[1.2rem] xl:text-[2.188rem]">$99/Mth</h2></h2>
+            <h2 className="font-lato font-[500] text-[0.65rem] mb-5 sm:text-[1rem] xl:text-[1.25rem]">
+              Starter{" "}
+              <h2 className="font-lato font-[700] sm:text-[1rem] md:text-[1.2rem] xl:text-[2.188rem]">
+                $99/Mth
+              </h2>
+            </h2>
             <ul className="font-nunito font-[400] text-[0.45rem] text-left mb-5 flex flex-col gap-3 sm:text-[0.5rem] md:text-[0.6rem]  xl:text-[0.875rem] xl:gap-[1.125rem] xl:mb-[65px]">
               <li className="flex gap-3">
                 <img
@@ -356,8 +385,13 @@ const NewHero = () => {
               Contact Us
             </button>
           </div>
-              <div className=" bg-white grid-box-shadow text-center mx-auto rounded-2xl p-5 xl:p-10">
-            <h2 className="font-lato font-[500] text-[0.65rem] mb-5 sm:text-[1rem] xl:text-[1.25rem]">Starter <h2 className="font-lato font-[700] sm:text-[1rem] md:text-[1.2rem] xl:text-[2.188rem]">$99/Mth</h2></h2>
+          <div className=" bg-white grid-box-shadow text-center mx-auto rounded-2xl p-5 xl:p-10">
+            <h2 className="font-lato font-[500] text-[0.65rem] mb-5 sm:text-[1rem] xl:text-[1.25rem]">
+              Starter{" "}
+              <h2 className="font-lato font-[700] sm:text-[1rem] md:text-[1.2rem] xl:text-[2.188rem]">
+                $99/Mth
+              </h2>
+            </h2>
             <ul className="font-nunito font-[400] text-[0.45rem] text-left mb-5 flex flex-col gap-3 sm:text-[0.5rem] md:text-[0.6rem]  xl:text-[0.875rem] xl:gap-[1.125rem] xl:mb-[65px]">
               <li className="flex gap-3">
                 <img
@@ -404,8 +438,13 @@ const NewHero = () => {
               Contact Us
             </button>
           </div>
-             <div className=" bg-white grid-box-shadow text-center mx-auto rounded-2xl p-5 xl:p-10">
-            <h2 className="font-lato font-[500] text-[0.65rem] mb-5 sm:text-[1rem] xl:text-[1.25rem]">Starter <h2 className="font-lato font-[700] sm:text-[1rem] md:text-[1.2rem] xl:text-[2.188rem]">$99/Mth</h2></h2>
+          <div className=" bg-white grid-box-shadow text-center mx-auto rounded-2xl p-5 xl:p-10">
+            <h2 className="font-lato font-[500] text-[0.65rem] mb-5 sm:text-[1rem] xl:text-[1.25rem]">
+              Starter{" "}
+              <h2 className="font-lato font-[700] sm:text-[1rem] md:text-[1.2rem] xl:text-[2.188rem]">
+                $99/Mth
+              </h2>
+            </h2>
             <ul className="font-nunito font-[400] text-[0.45rem] text-left mb-5 flex flex-col gap-3 sm:text-[0.5rem] md:text-[0.6rem]  xl:text-[0.875rem] xl:gap-[1.125rem] xl:mb-[65px]">
               <li className="flex gap-3">
                 <img
@@ -455,13 +494,36 @@ const NewHero = () => {
         </div>
       </section>
       <section>
-        <h1 className="text-[0.5rem]">Stay updated with the latest trends, tips, and success stories.</h1>
-        <div className="grid">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
+        <h1 className=" font-lato font-[500] text-[0.7rem] text-center mb-2.5 px-5 sm:text-[0.85rem] sm:mb-5 lg:text-[1rem] lg:mb-10 xl:text-[1.875rem]">
+          Stay updated with the latest trends, tips, and success stories.
+        </h1>
+        <div className="grid grid-cols-2 grid-rows-2 justify-items-center items-stretch content-center gap-2.5 px-5 mb-5 min-[400px]:px-10 sm:flex sm:flex-row sm:justify-between sm:items-stretch lg:px-30 lg:gap-5 xl:px-[100px] xl:gap-[2rem] xl:mb-10">
+          {smallGridPostsData.map((data) => (
+            <div className=" bg-[white] small-grid-btn-shadow justify-self-end rounded-2xl overflow-hidden sm:w-[100%] sm:h-auto xl:rounded-[1.563rem]">
+              <img
+                className="size-35 w-[100%] object-cover mb-2 xl:size-52.5 xl:w-[100%]"
+                src={data.image}
+                alt=""
+              />
+              <h5 className="font-nunito font-[400] text-[0.5rem] text-[#333333] px-[1.5rem] mb-2 sm:px-[1rem] sm:text-[0.55rem] md:text-[0.6rem] lg:text-[0.75rem] xl:text-[1rem] xl:ml-[1.5rem] xl:mb-7">
+                {data.text}
+              </h5>
+              <div className="flex items-center gap-2 pl-[1.5rem] mb-2 sm:px-[1rem] xl:mb-5">
+                <p className="text-primary font-nunito font-[400] text-[0.5rem] sm:text-[0.6rem] lg:text-[0.65rem] xl:text-[1rem] xl:ml-[1.5rem] hover:cursor-pointer">
+                  Read more
+                </p>
+                <img
+                  className="size-2 xl:size-4"
+                  src="public/icons/link-square.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          ))}
         </div>
+        <button className="text-primary text-[0.6rem] ml-[50%] -translate-x-[50%] all-resources-btn rounded-2xl px-1 py-0.5 mb-10 sm:py-1.5 sm:px-3 md:text-[0.65rem] lg:text-[0.7rem] xl:text-[1.125rem] xl:px-[1.125rem] xl:rounded-[1.5rem] xl:py-[0.625rem] hover:cursor-pointer hover:bg-[whitesmoke]">
+          See all resources
+        </button>
       </section>
     </>
   );
