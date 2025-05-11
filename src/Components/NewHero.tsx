@@ -521,9 +521,20 @@ const NewHero = () => {
             </div>
           ))}
         </div>
-        <button className="text-primary text-[0.6rem] ml-[50%] -translate-x-[50%] all-resources-btn rounded-2xl px-1 py-0.5 mb-10 sm:py-1.5 sm:px-3 md:text-[0.65rem] lg:text-[0.7rem] xl:text-[1.125rem] xl:px-[1.125rem] xl:rounded-[1.5rem] xl:py-[0.625rem] hover:cursor-pointer hover:bg-[whitesmoke]">
+        <button className="text-[#45DCBF] text-[0.6rem] ml-[50%] -translate-x-[50%] all-resources-btn rounded-2xl px-1 py-0.5 mb-10 sm:py-1.5 sm:px-3 md:text-[0.65rem] lg:text-[0.7rem] xl:text-[1.125rem] xl:px-[1.125rem] xl:rounded-[1.5rem] xl:py-[0.625rem] hover:cursor-pointer hover:bg-[whitesmoke]">
           See all resources
         </button>
+      </section>
+      <section className="px-5 min-[400px]:px-10 sm:px-25 md:px-40 lg:px-[17rem] mb-10 xl:px-[23.125rem]">
+        <h1 className="font-lato font-[500] text-center text-[0.7rem] mb-2 min-[400px]:text-[0.85rem] md:text-[0.9rem] lg:text-[1rem] lg:mb-5 xl:text-[1.875rem]">Ready To Take The Next Step?</h1>
+        <div className="stay-updated-box rounded-2xl p-5 pt-10 lg:p-10 lg:pt-15 lg:pb-5 xl:px-[4.7rem]">
+          <h2 className="font-lato font-[400] text-[#17161A] text-[0.6rem] mb-1 min-[400px]:text-[0.7rem] md:text-[0.85rem] lg:text-[1rem] lg:mb-3 xl:text-[1.25rem] xl:mb-[0.75rem] "> Stay up to date.</h2>
+          <p className="font-nunito font-[400] text-[#999999] text-[0.5rem] mb-1 md:text-[0.65rem] lg:text-[0.8rem] lg:mb-3 xl:text-[1rem]">Get the latest research, industry insights, and product news delivered straight to your inbox.</p>
+          <div className="email-address-shadow rounded-lg flex-row inline-flex items-center gap-0 sm:rounded-2xl xl:rounded-[1.5rem]">
+            <input className="font-nunito font-[400] text-[#999999] text-[0.5rem] justify-self-end px-2 sm:text-[0.6rem] md:text-[0.65rem] md:px-4 lg:text-[0.75rem] xl:text-[1rem] xl:py-[0.688rem] xl:px-[2.188rem]" type="text" name="" id="" placeholder="enter email address" />
+            <button className="bg-[#45DCBF] text-[#17161A] font-nunito font-[500] text-[0.6rem] px-2 py-0.5 rounded-r-lg justify-self-start sm:px-3 sm:py-1 sm:rounded-r-2xl md:text-[0.65rem] md:px-4 lg:text-[0.7rem] xl:text-[1.125rem] xl:py-[0.625rem] xl:px-[4rem] xl:rounded-r-[1.5rem] hover:cursor-pointer hover:brightness-95">Subscribe</button>
+          </div>
+        </div>
       </section>
     </>
   );
