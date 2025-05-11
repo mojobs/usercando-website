@@ -4,8 +4,8 @@ import FrequentlyAskedQuestion from "./FrequentlyAskedQuestion";
 const NewHero = () => {
   const [firstToggled, setFirstToggled] = useState<number | null>(null);
   const [secondToggled, setSecondToggled] = useState<number | null>(null);
-  const[frequentlyAskedQuestionIndex, setFrequentlyAskedQuestionIndex] = useState<number|null>(null);
-
+  const [frequentlyAskedQuestionIndex, setFrequentlyAskedQuestionIndex] =
+    useState<number | null>(null);
 
   const toggleFirstList = (index: number) => {
     setFirstToggled(firstToggled === index ? null : index);
@@ -15,7 +15,9 @@ const NewHero = () => {
     setSecondToggled(secondToggled === index ? null : index);
   };
   const toggleFrequentlyAskedQuestions = (index: number) => {
-    setFrequentlyAskedQuestionIndex(frequentlyAskedQuestionIndex === index ? null : index);
+    setFrequentlyAskedQuestionIndex(
+      frequentlyAskedQuestionIndex === index ? null : index
+    );
   };
 
   const firstListItems = [
@@ -231,7 +233,7 @@ const NewHero = () => {
       </section>
       <section className="mb-20">
         <div>
-          <h1 className="text-[#03302C] font-lato font-[500] text-[0.65rem] min-[400px]:text-[0.7rem] sm:text-[0.85rem] md:text-[1rem] lg:text-[1.2rem] mb-5 lg:mb-7 xl:text-[1.5rem]  xl:mb-20 text-center">
+          <h1 className="text-[#03302C] font-lato font-[500] text-[0.65rem] min-[400px]:text-[0.7rem] sm:text-[0.85rem] md:text-[1rem] lg:text-[1.2rem] mb-5 lg:mb-7 xl:text-[1.5rem] xl:mb-20 text-center">
             FREQUENTLY ASKED QUESTIONS
           </h1>
           <FrequentlyAskedQuestion
@@ -241,15 +243,225 @@ const NewHero = () => {
           />
         </div>
       </section>
-      <section className="mb-20">
-        <div className="text-center px-5 min-[400px]:px-10 sm:px-25 md:px-30 lg:px-50 xl:px-90]">
-        <h1 className="font-lato font-[500] text-[#03302C] text-[0.65rem] min-[400px]:text-[0.7rem] min-[400px]:mb-1 sm:text-[0.85rem] md:text-[1rem] lg:text-[1.5rem] xl:text-[2.188rem]">Achieve Your Business Objectives</h1>
-        <p className="text-[0.5rem] text-[#333333] min-[400px]:text-[0.6rem] min-[400px]:mb-1 sm:text-[0.8rem] sm:mb-2 md:text-[0.9rem] lg:text-[1.2rem] lg:mb-5 xl:text-[1.125rem]">Choose a plan that’s best for you and start your digital transformation <br className="max-[1400px]:hidden" /> journey today!</p>
-        <button className="text-[0.55rem] min-[400px]:text-[0.6rem] text-[#45DCBF] view-detailed-pricing-btn rounded-[10px] px-2 py-0.5 min-[400px]:px-3 min-[400px]:py-1 sm:text-[0.75rem] sm:py-2 sm:px-3 sm:rounded-2xl md:text-[0.85rem] md:px-4 lg:text-[1rem] lg:px-7 lg:py-2 lg:rounded-3xl xl:text-[1.125rem] xl:py-[0.625rem] xl:px-[1.875rem] hover:brightness-[75%] hover:cursor-pointer"> View Detailed Pricing</button>
+      <section className="mb-10">
+        <div className="text-center px-5 min-[400px]:px-10 sm:px-25 md:px-30 lg:px-50 xl:px-90">
+          <h1 className="font-lato font-[500] text-[#03302C] text-[0.65rem] min-[400px]:text-[0.7rem] min-[400px]:mb-1 sm:text-[0.85rem] md:text-[1rem] lg:text-[1.5rem] xl:text-[2.188rem]">
+            Achieve Your Business Objectives
+          </h1>
+          <p className="text-[0.5rem] text-[#333333] min-[400px]:text-[0.6rem] min-[400px]:mb-1 sm:text-[0.8rem] sm:mb-2 md:text-[0.9rem] lg:text-[1.2rem] lg:mb-5 xl:text-[1.125rem]">
+            Choose a plan that’s best for you and start your digital
+            transformation <br className="max-[1400px]:hidden" /> journey today!
+          </p>
+          <button className="text-[0.55rem] min-[400px]:text-[0.6rem] text-[#45DCBF] view-detailed-pricing-btn rounded-[10px] px-2 py-0.5 min-[400px]:px-3 min-[400px]:py-1 sm:text-[0.75rem] sm:py-2 sm:px-3 sm:rounded-2xl md:text-[0.85rem] md:px-4 lg:text-[1rem] lg:px-7 lg:py-2 lg:rounded-3xl xl:text-[1.125rem] xl:py-[0.625rem] xl:px-[1.875rem] hover:brightness-[75%] hover:cursor-pointer">
+            {" "}
+            View Detailed Pricing
+          </button>
+        </div>
+      </section>
+      <section className="mb-10">
+        <div className="flex flex-col gap-5 sm:grid sm:grid-cols-2 sm:grid-rows-2 sm:px-30 sm:gap-10 md:px-45 lg:px-65 lg:gap-x-3 xl:px-100 min-[1400px]:px-75">
+          <div className=" bg-white grid-box-shadow text-center mx-auto rounded-2xl p-5 xl:p-10">
+            <h2 className="font-lato font-[500] text-[0.65rem] mb-5 sm:text-[1rem] md:text-[1.2rem] xl:text-[1.25rem]">Free</h2>
+            <ul className="font-nunito font-[400] text-[0.45rem] text-left mb-5 flex flex-col gap-3 sm:text-[0.5rem] sm:mb-11 md:text-[0.6rem] xl:text-[0.875rem] xl:gap-[1.125rem] xl:mb-[115px]">
+              <li className="flex gap-3">
+                <img
+                  className="size-3 xl:size-5"
+                  src="public/icons/checkmark.svg"
+                  alt=""
+                />
+                <p> Basic Process Documentation</p>
+              </li>
+              <li className="flex gap-3">
+                <img
+                  className="size-3 xl:size-5"
+                  src="public/icons/checkmark.svg"
+                  alt=""
+                />
+                <p>Data Capture and Storage</p>
+              </li>
+              <li className="flex gap-3">
+                <img
+                  className="size-3 xl:size-5"
+                  src="public/icons/checkmark.svg"
+                  alt=""
+                />
+                <p>Access to Core automation Tools</p>
+              </li>
+              <li className="flex gap-3">
+                <img
+                  className="size-3 xl:size-5"
+                  src="public/icons/checkmark.svg"
+                  alt=""
+                />
+                <p>Monthly performance Reports</p>
+              </li>
+              <li className="flex gap-3">
+                <img
+                  className="size-3 xl:size-5"
+                  src="public/icons/checkmark.svg"
+                  alt=""
+                />
+                <p>Email Support</p>
+              </li>
+            </ul>
+            <button className="font-nunito font-[500] text-[0.6rem] text-[#03302C] rounded-[10px] px-2 py-0.5 grid-btn-shadow sm:text-[0.65rem] sm:px-3 sm:py-1 sm:rounded-[20px] xl:px-[1.875rem] xl:py-[0.625rem] xl:text-[1.125rem] xl:rounded-[1.5rem]">
+              Contact Us
+            </button>
+          </div>
+          <div className=" bg-white grid-box-shadow text-center mx-auto rounded-2xl p-5 xl:p-10">
+            <h2 className="font-lato font-[500] text-[0.65rem] mb-5 sm:text-[1rem] xl:text-[1.25rem]">Starter <h2 className="font-lato font-[700] sm:text-[1rem] md:text-[1.2rem] xl:text-[2.188rem]">$99/Mth</h2></h2>
+            <ul className="font-nunito font-[400] text-[0.45rem] text-left mb-5 flex flex-col gap-3 sm:text-[0.5rem] md:text-[0.6rem]  xl:text-[0.875rem] xl:gap-[1.125rem] xl:mb-[65px]">
+              <li className="flex gap-3">
+                <img
+                  className="size-3  xl:size-5"
+                  src="public/icons/checkmark.svg"
+                  alt=""
+                />
+                <p> Basic Process Documentation</p>
+              </li>
+              <li className="flex gap-3">
+                <img
+                  className="size-3  xl:size-5"
+                  src="public/icons/checkmark.svg"
+                  alt=""
+                />
+                <p>Data Capture and Storage</p>
+              </li>
+              <li className="flex gap-3">
+                <img
+                  className="size-3  xl:size-5"
+                  src="public/icons/checkmark.svg"
+                  alt=""
+                />
+                <p>Access to Core automation Tools</p>
+              </li>
+              <li className="flex gap-3">
+                <img
+                  className="size-3  xl:size-5"
+                  src="public/icons/checkmark.svg"
+                  alt=""
+                />
+                <p>Monthly performance Reports</p>
+              </li>
+              <li className="flex gap-3">
+                <img
+                  className="size-3  xl:size-5"
+                  src="public/icons/checkmark.svg"
+                  alt=""
+                />
+                <p>Email Support</p>
+              </li>
+            </ul>
+            <button className="font-nunito font-[500] text-[0.6rem] text-[#03302C] rounded-[10px] px-2 py-0.5 grid-btn-shadow sm:text-[0.65rem] sm:px-3 sm:py-1 sm:rounded-[20px] xl:px-[1.875rem] xl:py-[0.625rem] xl:text-[1.125rem] xl:rounded-[1.5rem]">
+              Contact Us
+            </button>
+          </div>
+              <div className=" bg-white grid-box-shadow text-center mx-auto rounded-2xl p-5 xl:p-10">
+            <h2 className="font-lato font-[500] text-[0.65rem] mb-5 sm:text-[1rem] xl:text-[1.25rem]">Starter <h2 className="font-lato font-[700] sm:text-[1rem] md:text-[1.2rem] xl:text-[2.188rem]">$99/Mth</h2></h2>
+            <ul className="font-nunito font-[400] text-[0.45rem] text-left mb-5 flex flex-col gap-3 sm:text-[0.5rem] md:text-[0.6rem]  xl:text-[0.875rem] xl:gap-[1.125rem] xl:mb-[65px]">
+              <li className="flex gap-3">
+                <img
+                  className="size-3  xl:size-5"
+                  src="public/icons/checkmark.svg"
+                  alt=""
+                />
+                <p> Basic Process Documentation</p>
+              </li>
+              <li className="flex gap-3">
+                <img
+                  className="size-3  xl:size-5"
+                  src="public/icons/checkmark.svg"
+                  alt=""
+                />
+                <p>Data Capture and Storage</p>
+              </li>
+              <li className="flex gap-3">
+                <img
+                  className="size-3  xl:size-5"
+                  src="public/icons/checkmark.svg"
+                  alt=""
+                />
+                <p>Access to Core automation Tools</p>
+              </li>
+              <li className="flex gap-3">
+                <img
+                  className="size-3  xl:size-5"
+                  src="public/icons/checkmark.svg"
+                  alt=""
+                />
+                <p>Monthly performance Reports</p>
+              </li>
+              <li className="flex gap-3">
+                <img
+                  className="size-3  xl:size-5"
+                  src="public/icons/checkmark.svg"
+                  alt=""
+                />
+                <p>Email Support</p>
+              </li>
+            </ul>
+            <button className="font-nunito font-[500] text-[0.6rem] text-[#03302C] rounded-[10px] px-2 py-0.5 grid-btn-shadow sm:text-[0.65rem] sm:px-3 sm:py-1 sm:rounded-[20px] xl:px-[1.875rem] xl:py-[0.625rem] xl:text-[1.125rem] xl:rounded-[1.5rem]">
+              Contact Us
+            </button>
+          </div>
+             <div className=" bg-white grid-box-shadow text-center mx-auto rounded-2xl p-5 xl:p-10">
+            <h2 className="font-lato font-[500] text-[0.65rem] mb-5 sm:text-[1rem] xl:text-[1.25rem]">Starter <h2 className="font-lato font-[700] sm:text-[1rem] md:text-[1.2rem] xl:text-[2.188rem]">$99/Mth</h2></h2>
+            <ul className="font-nunito font-[400] text-[0.45rem] text-left mb-5 flex flex-col gap-3 sm:text-[0.5rem] md:text-[0.6rem]  xl:text-[0.875rem] xl:gap-[1.125rem] xl:mb-[65px]">
+              <li className="flex gap-3">
+                <img
+                  className="size-3  xl:size-5"
+                  src="public/icons/checkmark.svg"
+                  alt=""
+                />
+                <p> Basic Process Documentation</p>
+              </li>
+              <li className="flex gap-3">
+                <img
+                  className="size-3  xl:size-5"
+                  src="public/icons/checkmark.svg"
+                  alt=""
+                />
+                <p>Data Capture and Storage</p>
+              </li>
+              <li className="flex gap-3">
+                <img
+                  className="size-3  xl:size-5"
+                  src="public/icons/checkmark.svg"
+                  alt=""
+                />
+                <p>Access to Core automation Tools</p>
+              </li>
+              <li className="flex gap-3">
+                <img
+                  className="size-3  xl:size-5"
+                  src="public/icons/checkmark.svg"
+                  alt=""
+                />
+                <p>Monthly performance Reports</p>
+              </li>
+              <li className="flex gap-3">
+                <img
+                  className="size-3  xl:size-5"
+                  src="public/icons/checkmark.svg"
+                  alt=""
+                />
+                <p>Email Support</p>
+              </li>
+            </ul>
+            <button className="font-nunito font-[500] text-[0.6rem] text-[#03302C] rounded-[10px] px-2 py-0.5 grid-btn-shadow sm:text-[0.65rem] sm:px-3 sm:py-1 sm:rounded-[20px] xl:px-[1.875rem] xl:py-[0.625rem] xl:text-[1.125rem] xl:rounded-[1.5rem]">
+              Contact Us
+            </button>
+          </div>
         </div>
       </section>
       <section>
-        <div></div>
+        <h1 className="text-[0.5rem]">Stay updated with the latest trends, tips, and success stories.</h1>
+        <div className="grid">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
       </section>
     </>
   );
