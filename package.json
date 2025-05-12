@@ -2,6 +2,7 @@
   "name": "usercando",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://usercandoapp.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

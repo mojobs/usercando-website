@@ -37,7 +37,7 @@ const LandingPageHeader = () => {
                 <div className="flex items-center gap-1.5 min-[1400px]:gap-2.5">
                   <img
                     className="size-2.5 min-[1000px]:size-5 min-[1400px]:size-[2.5rem]"
-                    src="public/icons/document.png"
+                    src="/icons/document.png"
                     alt=""
                   />
                   <div>
@@ -52,7 +52,7 @@ const LandingPageHeader = () => {
                 <div className="flex items-center gap-1.5 min-[1400px]:gap-3">
                   <img
                     className="size-2.5 min-[1000px]:size-5 min-[1400px]:size-[2.5rem]"
-                    src="public/icons/centralize.png"
+                    src="/icons/centralize.png"
                     alt=""
                   />
                   <div>
@@ -67,7 +67,7 @@ const LandingPageHeader = () => {
                 <div className="flex items-center gap-1.5 min-[1400px]:gap-3">
                   <img
                     className="size-2.5 min-[1000px]:size-5 min-[1400px]:size-[2.5rem]"
-                    src="public/icons/quickStart.png"
+                    src="/icons/quickStart.png"
                     alt=""
                   />
                   <div>
@@ -82,7 +82,7 @@ const LandingPageHeader = () => {
                 <div className="flex items-center gap-1.5 min-[1400px]:gap-3">
                   <img
                     className="size-2.5 min-[1000px]:size-5 min-[1400px]:size-[2.5rem]"
-                    src="public/icons/digital-continuation.png"
+                    src="/icons/digital-continuation.png"
                     alt=""
                   />
                   <div>

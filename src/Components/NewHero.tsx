@@ -96,22 +96,22 @@ const NewHero = () => {
   const smallGridPostsData = [
     {
       index: 1,
-      image: "public/images/lightbulb-image.png",
+      image: "/images/lightbulb-image.png",
       text: "The Benefits of Digital Transformation for Small Businesses",
     },
     {
       index: 2,
-      image: "public/images/clipboard-image.png",
+      image: "/images/clipboard-image.png",
       text: "5 Common Pitfalls in Digital Transformation and How to Avoid Them",
     },
     {
       index: 3,
-      image: "public/images/brain-image.png",
+      image: "/images/brain-image.png",
       text: "How to Choose the Right Digital Transformation Tools for Your Business",
     },
     {
       index: 4,
-      image: "public/images/blockchain-image.png",
+      image: "/images/blockchain-image.png",
       text: "The Importance of Stakeholder Engagement in Digital Transformation",
     },
   ];
@@ -165,12 +165,12 @@ const NewHero = () => {
           <div className="size-30 min-[600px]:size-45 md:size-50 lg:size-70 xl:size-93 2xl-[1400px]:size-150 mx-auto sm:ml-7 text-center flex -translate-x-[25%] relative">
             <img
               className="size-[80%] min-[600px]:w-[80%] min-[600px]:h-[60%] xl:h-[65%] rounded-lg min-[600px]:rounded-4xl xl:rounded-[2.813rem] absolute shadow-md shadow-black object-cover"
-              src="public/images/neuralImage.png"
+              src="/images/neuralImage.png"
               alt=""
             />
             <img
               className="size-[80%] min-[600px]:w-[90%] min-[600px]:h-[80%] xl:h-[82%] xl:w-[100%] rounded-lg min-[600px]:rounded-4xl min-[1400px]:rounded-[2.813rem] relative top-[25%] left-[50%] min-[600px]:top-[30%] border-2 border-primary object-cover"
-              src="public/images/statiticsImage.png"
+              src="/images/statiticsImage.png"
               alt=""
             />
           </div>
@@ -194,12 +194,12 @@ const NewHero = () => {
             <div className="size-30 relative mx-auto mb-7 -translate-x-[25%] sm:flex sm:size-45 lg:size-70 xl:size-93">
               <img
                 className="size-[80%] absolute sm:w-[80%] sm:h-[60%] min-[1400px]:h-[65%] xl:w-[100%]"
-                src="public/images/blankImage.png"
+                src="/images/blankImage.png"
                 alt=""
               />
               <img
                 className="size-[80%] relative top-[25%] left-[50%] sm:w-[80%] sm:h-[60%] xl:h-[65%]  xl:w-[100%]"
-                src="public/images/blankImage.png"
+                src="/images/blankImage.png"
                 alt=""
               />
             </div>
@@ -290,7 +290,7 @@ const NewHero = () => {
               <li className="flex gap-3">
                 <img
                   className="size-3 xl:size-5"
-                  src="public/icons/checkmark.svg"
+                  src="/icons/checkmark.svg"
                   alt=""
                 />
                 <p> Basic Process Documentation</p>
@@ -298,7 +298,7 @@ const NewHero = () => {
               <li className="flex gap-3">
                 <img
                   className="size-3 xl:size-5"
-                  src="public/icons/checkmark.svg"
+                  src="/icons/checkmark.svg"
                   alt=""
                 />
                 <p>Data Capture and Storage</p>
@@ -306,7 +306,7 @@ const NewHero = () => {
               <li className="flex gap-3">
                 <img
                   className="size-3 xl:size-5"
-                  src="public/icons/checkmark.svg"
+                  src="/icons/checkmark.svg"
                   alt=""
                 />
                 <p>Access to Core automation Tools</p>
@@ -314,7 +314,7 @@ const NewHero = () => {
               <li className="flex gap-3">
                 <img
                   className="size-3 xl:size-5"
-                  src="public/icons/checkmark.svg"
+                  src="/icons/checkmark.svg"
                   alt=""
                 />
                 <p>Monthly performance Reports</p>
@@ -322,7 +322,7 @@ const NewHero = () => {
               <li className="flex gap-3">
                 <img
                   className="size-3 xl:size-5"
-                  src="public/icons/checkmark.svg"
+                  src="/icons/checkmark.svg"
                   alt=""
                 />
                 <p>Email Support</p>
@@ -343,7 +343,7 @@ const NewHero = () => {
               <li className="flex gap-3">
                 <img
                   className="size-3  xl:size-5"
-                  src="public/icons/checkmark.svg"
+                  src="/icons/checkmark.svg"
                   alt=""
                 />
                 <p> Basic Process Documentation</p>
@@ -351,7 +351,7 @@ const NewHero = () => {
               <li className="flex gap-3">
                 <img
                   className="size-3  xl:size-5"
-                  src="public/icons/checkmark.svg"
+                  src="/icons/checkmark.svg"
                   alt=""
                 />
                 <p>Data Capture and Storage</p>
@@ -359,7 +359,7 @@ const NewHero = () => {
               <li className="flex gap-3">
                 <img
                   className="size-3  xl:size-5"
-                  src="public/icons/checkmark.svg"
+                  src="/icons/checkmark.svg"
                   alt=""
                 />
                 <p>Access to Core automation Tools</p>
@@ -367,7 +367,7 @@ const NewHero = () => {
               <li className="flex gap-3">
                 <img
                   className="size-3  xl:size-5"
-                  src="public/icons/checkmark.svg"
+                  src="/icons/checkmark.svg"
                   alt=""
                 />
                 <p>Monthly performance Reports</p>
@@ -375,7 +375,7 @@ const NewHero = () => {
               <li className="flex gap-3">
                 <img
                   className="size-3  xl:size-5"
-                  src="public/icons/checkmark.svg"
+                  src="/icons/checkmark.svg"
                   alt=""
                 />
                 <p>Email Support</p>
@@ -396,7 +396,7 @@ const NewHero = () => {
               <li className="flex gap-3">
                 <img
                   className="size-3  xl:size-5"
-                  src="public/icons/checkmark.svg"
+                  src="/icons/checkmark.svg"
                   alt=""
                 />
                 <p> Basic Process Documentation</p>
@@ -404,7 +404,7 @@ const NewHero = () => {
               <li className="flex gap-3">
                 <img
                   className="size-3  xl:size-5"
-                  src="public/icons/checkmark.svg"
+                  src="/icons/checkmark.svg"
                   alt=""
                 />
                 <p>Data Capture and Storage</p>
@@ -412,7 +412,7 @@ const NewHero = () => {
               <li className="flex gap-3">
                 <img
                   className="size-3  xl:size-5"
-                  src="public/icons/checkmark.svg"
+                  src="/icons/checkmark.svg"
                   alt=""
                 />
                 <p>Access to Core automation Tools</p>
@@ -420,7 +420,7 @@ const NewHero = () => {
               <li className="flex gap-3">
                 <img
                   className="size-3  xl:size-5"
-                  src="public/icons/checkmark.svg"
+                  src="/icons/checkmark.svg"
                   alt=""
                 />
                 <p>Monthly performance Reports</p>
@@ -428,7 +428,7 @@ const NewHero = () => {
               <li className="flex gap-3">
                 <img
                   className="size-3  xl:size-5"
-                  src="public/icons/checkmark.svg"
+                  src="/icons/checkmark.svg"
                   alt=""
                 />
                 <p>Email Support</p>
@@ -449,7 +449,7 @@ const NewHero = () => {
               <li className="flex gap-3">
                 <img
                   className="size-3  xl:size-5"
-                  src="public/icons/checkmark.svg"
+                  src="/icons/checkmark.svg"
                   alt=""
                 />
                 <p> Basic Process Documentation</p>
@@ -457,7 +457,7 @@ const NewHero = () => {
               <li className="flex gap-3">
                 <img
                   className="size-3  xl:size-5"
-                  src="public/icons/checkmark.svg"
+                  src="/icons/checkmark.svg"
                   alt=""
                 />
                 <p>Data Capture and Storage</p>
@@ -465,7 +465,7 @@ const NewHero = () => {
               <li className="flex gap-3">
                 <img
                   className="size-3  xl:size-5"
-                  src="public/icons/checkmark.svg"
+                  src="/icons/checkmark.svg"
                   alt=""
                 />
                 <p>Access to Core automation Tools</p>
@@ -473,7 +473,7 @@ const NewHero = () => {
               <li className="flex gap-3">
                 <img
                   className="size-3  xl:size-5"
-                  src="public/icons/checkmark.svg"
+                  src="/icons/checkmark.svg"
                   alt=""
                 />
                 <p>Monthly performance Reports</p>
@@ -481,7 +481,7 @@ const NewHero = () => {
               <li className="flex gap-3">
                 <img
                   className="size-3  xl:size-5"
-                  src="public/icons/checkmark.svg"
+                  src="/icons/checkmark.svg"
                   alt=""
                 />
                 <p>Email Support</p>
@@ -514,7 +514,7 @@ const NewHero = () => {
                 </p>
                 <img
                   className="size-2 xl:size-4"
-                  src="public/icons/link-square.svg"
+                  src="/icons/link-square.svg"
                   alt=""
                 />
               </div>

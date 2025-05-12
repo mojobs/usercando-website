@@ -15,7 +15,7 @@ const BlogHero = () => {
         <div className=" font-nunito flex gap-5 mb-10 max-[500px]:block min-[1000px]:block min-[1000px]:h-[14rem] min-[1000px]:mb-15 xl:mb-35 2xl:mb-65">
           <img
             className="size-[50%] rounded-[1rem] object-cover max-[500px]:size-[70%] max-[500px]:mx-auto max-[500px]:mb-5 min-[1000px]:mx-auto min-[1000px]:w-[50%] min-[1000px]:h-[100%] min-[1000px]:mb-10 xl:h-[150%] 2xl:h-[200%]"
-            src="public/images/blog-image.jpg"
+            src="/images/blog-image.jpg"
             alt=""
           />
           <p className="text-[3vw] max-[500px]:text-[1rem] font-nunito tracking-tight min-[1000px]:hidden">
@@ -68,7 +68,7 @@ const BlogHero = () => {
             business back. Start today, and watch your growth take off.
           </p>
           <div className="max-[1000px]:hidden">
-            <img src="public/icons/send-button.png" alt="" />
+            <img src="/icons/send-button.png" alt="" />
           </div>
         </div>
       </section>
