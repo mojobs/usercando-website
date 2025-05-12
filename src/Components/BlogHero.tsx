@@ -26,8 +26,8 @@ const BlogHero = () => {
             of this foundation is business process documentation.
           </p>
         </div>
-        <div className="min-[1000px]:w-[46rem] min-[1000px]:mx-auto min-[1000px]:text-left min-[1000px]:text-[1rem] 2xl:text-[1.7rem]">
-          <p className="max-[1000px]:hidden text-[3vw] max-[500px]:text-[1rem] font-nunito tracking-tight min-[1000px]:text-[1rem] min-[1000px]:mb-10 2xl:text-[1.7rem]">
+        <div className="min-[1000px]:w-[46rem] min-[1000px]:mx-auto min-[1000px]:text-left lg:text-[1rem] xl:text-[1.5rem]">
+          <p className="max-[1000px]:hidden text-[3vw] max-[500px]:text-[1rem] font-nunito tracking-tight min-[1000px]:text-[1rem] min-[1000px]:mb-10 xl:text-[1.5rem]">
             In the fast-paced world of business, growth isn’t just about
             increasing sales or expanding your market share. It’s about building
             a strong, scalable foundation that can support your company’s
