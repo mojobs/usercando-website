@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
+import  { useState } from 'react'
 import FrequentlyAskedQuestion from './FrequentlyAskedQuestion'
 
 const LandingHero = () => {
-  const [isOpen, setIsOpen] = useState<number|null>();
+  const [isOpen, setIsOpen] = useState<number|null>(null);
 
   const toggleItem = (index: number) => {
     setIsOpen(isOpen === index ? null : index);
