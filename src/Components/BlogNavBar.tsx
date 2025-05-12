@@ -18,9 +18,9 @@ const BlogNavBar = () => {
           <img className=" h-[32px] w-[32px]" src="public/icons/black-menu.png" alt="" />
         </div>
     </nav>
-    <NavLink to="" className="max-[1000px]:hidden absolute top-12 left-7 w-[10vw] ml-0 bg-[#FBFEFD42] side-bar-shadow">
+    {/* <NavLink to="" className="max-[1000px]:hidden absolute top-12 left-7 w-[10vw] ml-0 bg-[#FBFEFD42] side-bar-shadow">
     <img className="mx-auto" src="public/icons/dashboard-square.png" alt="" />
-    </NavLink>
+    </NavLink> */}
     </>
     
         

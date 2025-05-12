@@ -185,7 +185,7 @@ const NewHero = () => {
           </button>
         </div>
       </section>
-      <section className="px-5 mb-10">
+      <section className="px-5 mb-10 xl:mb-25">
         <div className="mb-5">
           <h2 className="font-lato font-[500] text-[#03302C] mb-2 min-[400px]:mb-4 text-center text-[0.75rem] min-[400px]:text-[1rem] lg:text-[1.25rem] xl:text-[1.875rem] xl:mb-12">
             How it Works
@@ -280,7 +280,7 @@ const NewHero = () => {
           </button>
         </div>
       </section>
-      <section className="mb-10">
+      <section className="mb-10 xl:mb-30">
         <div className="flex flex-col gap-5 sm:grid sm:grid-cols-2 sm:grid-rows-2 sm:px-30 sm:gap-10 md:px-45 lg:px-65 lg:gap-x-3 xl:px-100 min-[1400px]:px-75">
           <div className=" bg-white grid-box-shadow text-center mx-auto rounded-2xl p-5 xl:p-10">
             <h2 className="font-lato font-[500] text-[0.65rem] mb-5 sm:text-[1rem] md:text-[1.2rem] xl:text-[1.25rem]">
@@ -493,7 +493,7 @@ const NewHero = () => {
           </div>
         </div>
       </section>
-      <section>
+      <section className="mb-10 xl:mb-20">
         <h1 className=" font-lato font-[500] text-[0.7rem] text-center mb-2.5 px-5 sm:text-[0.85rem] sm:mb-5 lg:text-[1rem] lg:mb-10 xl:text-[1.875rem]">
           Stay updated with the latest trends, tips, and success stories.
         </h1>
